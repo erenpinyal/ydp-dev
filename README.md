@@ -65,6 +65,8 @@ results = model.train(data='data.yaml', epochs=100, imgsz=640)
 
 ###### **confusion matrix**
 
-Gerçek (Actual) \ Tahmin (Predicted)   Cleaned   Dirty
-Cleaned                                16         4
-Dirty                                  50        694
+| cleaned  | dirty  |
+|---------|---------|
+| 18      | 4       |
+| 50      | 694     |
+

@@ -1,12 +1,12 @@
-#*Adım 1: Projenin Konusu ve Amacı*
+# *Adım 1: **Projenin Konusu ve Amacı**
 
 Bu proje, "Cleaned vs Dirty" veri setini kullanarak temiz ve kirli nesneleri ayırarak görüntülerin sınıflandırılması için bulunmakta.
 
-###Adım 2: Kullanılan platform
+### **Adım 2: Kullanılan platform**
 
 Google Colab
 
-###**Adım 3: Veri Seti **
+### **Adım 3: Veri Seti **
 
 Veri setini önce plates.zip dosyasından çıkardım ve fonksiyonla ayırdım
 
@@ -49,7 +49,7 @@ bash
         cleaned/
         dirty/
 
-###**Adım 4: model eğitimi**
+### **Adım 4: model eğitimi**
 
 YOLO modelini eğitmek için yolov5n kullandım
 
@@ -59,11 +59,11 @@ from ultralytics import YOLO
 model = YOLO('yolov5.pt')
 results = model.train(data='data.yaml', epochs=100, imgsz=640)
 
-###**Adım 5: Sonuçlar**
+### **Adım 5: Sonuçlar**
 
-#####**genel doğruluk: %95**
+##### **genel doğruluk: %95**
 
-######**confusion matrix**
+###### **confusion matrix**
 
 Gerçek (Actual) \ Tahmin (Predicted)   Cleaned   Dirty
 Cleaned                                16         4

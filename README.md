@@ -56,7 +56,7 @@ YOLO modelini eğitmek için yolov5n kullandım
 from ultralytics import YOLO
 
 
-model = YOLO('yolov5.pt')
+model = YOLO('yolov5n.pt')
 results = model.train(data='data.yaml', epochs=100, imgsz=640)
 
 ### **Adım 5: Sonuçlar**
